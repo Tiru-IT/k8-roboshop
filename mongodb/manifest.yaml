@@ -27,7 +27,7 @@ spec:
       containers:
       - name: mongodb
         image: suryamalli/mongodb:v1
-        imagePullPolicy: always
+        imagePullPolicy: Always
         readinessProbe:
           tcpSocket:
             port: 27017
