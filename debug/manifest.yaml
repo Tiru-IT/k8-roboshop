@@ -4,8 +4,8 @@ metadata:
   name: debug
   namespace: roboshop
   labels:
-  name: debug
-  project: roboshop
+    name: debug
+    project: roboshop
 spec:
   containers:
   - name: debug
