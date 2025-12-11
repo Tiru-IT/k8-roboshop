@@ -27,9 +27,6 @@ spec:
       - name: frontend
         image: suryamalli/frontend:v1
         imagePullPolicy: Always
-        envFrom:
-        - configMapRef:
-            name: frontend
         ports:
         - name: liveness-port
           containerPort: 80
