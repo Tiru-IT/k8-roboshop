@@ -8,7 +8,7 @@ metadata:
     component: catalogue
     tier: backend
 spec:
-  replica: 1
+  replicas: 1
   selector:
     matchLabels:
       project: roboshop
@@ -54,4 +54,4 @@ spec:
   ports:
     - protocol: TCP
       port: 8080 # service port
-      tergetPort: 8080 # container port 
+      targetPort: 8080 # container port 
