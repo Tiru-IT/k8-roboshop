@@ -98,7 +98,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - name: liveness-port
-          containerPort: 80
+          containerPort: 8080
         readinessProbe:
           httpGet:
             path: /
@@ -113,11 +113,11 @@ spec:
           periodSeconds: 15
         volumeMounts:
         - name: nginx-config
-          mountPath: /etc/nginx/nginx-config 
+          mountPath: /etc/nginx/nginx.config 
           subPath: nginx.conf
       volumes:
       - name: nginx-config
-        ConfigMap:
+        configMap:
           name: frontend
 ---
 apiVersion: v1
