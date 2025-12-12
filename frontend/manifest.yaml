@@ -116,9 +116,9 @@ spec:
           mountPath: /etc/nginx/nginx-config 
           subPath: nginx.conf
       volumes:
-        - name: nginx-config
-          ConfigMap:
-            name: frontend
+      - name: nginx-config
+        ConfigMap:
+          name: frontend
 ---
 apiVersion: v1
 kind: Service
